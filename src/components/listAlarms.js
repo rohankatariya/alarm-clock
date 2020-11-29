@@ -74,7 +74,7 @@ class ListAlarms extends React.Component {
     }
     render() {
         let alarmList = this.state.alarmList;
-        alarmList = alarmList ? JSON.parse(alarmList) : [{hours: 6, minutes: 20, apm: "am", message: "Morning Walk", days: ["Monday"]}];
+        alarmList = alarmList ? JSON.parse(alarmList) : [];
         let displayAlarms = this.props.heading === "Alarms" ? [...Array(alarmList.length).keys()] : this.state.selectedAlarms;
         return (
             <div className="listAlarm">
