@@ -1,0 +1,29 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #ebedf0;
+    flex: 1;
+    border-top: 1px solid lightgray;
+}
+
+.navelement {
+    padding: 3%;
+    flex: 1;
+}
+.navelement > button {
+    background-color: #ebedf0;
+    color: blue;
+    border: none;
+    font-size: medium;
+    outline: none;
+    text-decoration: none;
+}
+
+.navelement > button:hover{
+    cursor: pointer;
+}
+
+.right {
+    float: right;
+}

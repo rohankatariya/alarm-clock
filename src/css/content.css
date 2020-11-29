@@ -1,0 +1,241 @@
+.content {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.dateTime {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "sans-serif";
+    flex-direction: column;
+}
+
+.time {
+    font-size: 40px;
+}
+.date {
+    font-size: 20px;
+    color: gray;
+}
+
+.blankBlock {
+    flex: 1;
+    background-color: lightgray;
+}
+
+.listAlarm {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.noAlarm {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 30px;
+}
+.alarms {
+    display: flex;
+    flex-direction: column;
+}
+
+.alarm {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    border-bottom: 1px solid lightgray;
+}
+
+.apm {
+    font-size: 25px;
+}
+
+.alarmDetails {
+    font-size: small;
+    color: #ADA6BA;
+    font-family: "sans-serif";
+}
+
+.detailsBlock {
+    flex: 4;
+}
+
+.checkbox {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.checkbox > input {
+    height: 15px;
+    width: 15px;
+}
+
+.deleteBox {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.delete {
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 50%;
+    background-color: red;
+    height: 17px;
+    font-size: 12px;
+    color: white;
+    width: 20px;
+}
+
+.delete:hover {
+    cursor: pointer;
+}
+.greaterSign {
+    font-size: 25px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.select {
+    background-color: #3498DB;
+    color: white;
+    border-radius: 5%;
+    width: 90%;
+    padding: 8px;
+    outline: none;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.addAlarm > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.timeSelect {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 3%;
+}
+
+.timeSelect > div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.timeSelect > div:last-child {
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.repeatLabel {
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5%;
+    background-color: #ebedf0;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.addEditButtons {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex: 1;
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebedf0;
+    width: 30%;
+    border-top: 1px solid lightgray;
+}
+
+.addEditButtons > button {
+    margin-left: 5%;
+    border-radius: 5px;
+    margin-right: 5%;
+    width: 90%;
+    padding: 10px;
+    background-color: white;
+    height: 50px;
+    cursor: pointer;
+}
+
+.addEditButtons > button:first-child {
+    margin-top: 1%;
+    border: 1px solid blue;
+}
+
+.addEditButtons > button:last-child {
+    border: 1px solid red;
+}
+
+.bottomBox {
+    margin-bottom: 200px;
+}
+
+.greaterSign:hover {
+    cursor: pointer;
+}
+
+.backgroundBlack {
+    background-color: black;
+    color: white;
+}
+
+.snooze {
+    background-color: white;
+    color: blue;
+    border: blue;
+    width: 80%;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.stop {
+    background-color: black;
+    color: blue;
+    width: 85%;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.message {
+    margin-top: 5%;
+    font-size: 80px;
+    height: 70%;
+}
+
