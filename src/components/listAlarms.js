@@ -19,7 +19,7 @@ class ListAlarms extends React.Component {
 
     deleteAlarm(index) {
         let alarmList = localStorage.getItem("alarmList");
-        alarmList = alarmList ? JSON.parse(alarmList) : [{hours: 6, minutes: 20, apm: "am", message: "Morning Walk", days: ["Monday"]}];
+        alarmList = alarmList ? JSON.parse(alarmList) : [];
         alarmList.splice(index, 1);
         localStorage.setItem("alarmList", JSON.stringify(alarmList));
         let selectedAlarms = this.state.selectedAlarms;
