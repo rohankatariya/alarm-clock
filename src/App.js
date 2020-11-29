@@ -8,12 +8,12 @@ function App() {
     <div className="main">
       <div className="inner">
         <div className="heading">
-          {heading === "Clock" ? "" : <div className="headingElement textleft" onClick={() => setHeading("Edit Alarm")}><button>Edit</button></div>}
-          <div className="headingElement">{heading}</div>
-          {heading === "Clock" ? "" : <div className="headingElement"><button className="right" onClick={() => setHeading("Add")}>Add</button></div>}
+          {heading === "Clock" || heading === "Alarm" ? "" : <div className="headingElement textleft" onClick={() => setHeading("Edit Alarm")}><button>Edit</button></div>}
+          <div className={"headingElement " + (heading === "Alarm" ? "backgroundBlack" : "") }>{heading}</div>
+          {heading === "Clock" || heading === "Alarm" ? "" : <div className="headingElement"><button className="right" onClick={() => setHeading("Add")}>Add</button></div>}
         </div>
         <Content heading={heading} setHeading={setHeading}/>
-        {heading !== "Add" && heading !== "Edit" ? <NavBar setHeading={setHeading}/> : ""}
+        {heading !== "Add" && heading !== "Edit" && heading !== "Alarm" ? <NavBar setHeading={setHeading}/> : ""}
       </div>
     </div>
   );
